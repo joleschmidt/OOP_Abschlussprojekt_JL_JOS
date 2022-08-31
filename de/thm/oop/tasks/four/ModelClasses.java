@@ -1,4 +1,4 @@
-package de.thm.tasks.four;
+package de.thm.oop.tasks.four;
 
 public class ModelClasses {
 }
