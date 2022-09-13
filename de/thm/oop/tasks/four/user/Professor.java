@@ -7,6 +7,15 @@ public class Professor extends User {
     private String supervisor;
     private String researchFocus;
 
+    /**
+     *
+     * @param firstName
+     * @param lastName
+     * @param birthdate
+     * @param salary
+     * @param supervisor
+     * @param researchFocus
+     */
     public Professor(String firstName, String lastName, int birthdate, int salary, String supervisor, String researchFocus) {
         super(firstName, lastName, birthdate);
         this.salary = salary;
@@ -14,6 +23,10 @@ public class Professor extends User {
         this.researchFocus = researchFocus;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getAll() {
         return (firstName + ", " + lastName + ", " + birthdate + ", " + salary + ", " + supervisor + ", " + researchFocus);
     }

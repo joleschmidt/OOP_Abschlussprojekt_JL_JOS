@@ -6,6 +6,15 @@ public class Employee extends User {
     private String supervisor;
     private String activityDescription;
 
+    /**
+     *
+     * @param firstName
+     * @param lastName
+     * @param birthdate
+     * @param salary
+     * @param supervisor
+     * @param activityDescription
+     */
     public Employee(String firstName, String lastName, int birthdate, int salary, String supervisor, String activityDescription) {
         super(firstName, lastName, birthdate);
         this.salary = salary;
@@ -13,6 +22,10 @@ public class Employee extends User {
         this.activityDescription = activityDescription;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getAll() {
         return (firstName + ", " + lastName + ", " + birthdate + ", " + salary + ", " + supervisor + ", " + activityDescription);
     }
